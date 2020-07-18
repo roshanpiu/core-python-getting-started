@@ -13,9 +13,9 @@ add([1, 6], [21, 10])
 
 # causes a type error
 # PYTHON WILL NOT GENERALLY PERFORM IMPLICIT CONVERSION BETWEEN TYPES
-# add("add", 5.7) 
+# add("add", 5.7)
 
 # THE EXCEPTION TO THIS CASE IS IF AND WHILE PREDICATE CONVERSIONS TO BOOL
 a = "1"
 if a:
-  print(a)
+    print(a)

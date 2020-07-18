@@ -10,7 +10,7 @@
 
 # Names are looked up from narrowest to broadest context
 
-# Scopes in Python do no correspond to source code blocks 
+# Scopes in Python do no correspond to source code blocks
 
 # Module name bindings are typically introduced by import statements and function or class definitions
 # Typically for defining contants we use module scope
@@ -19,14 +19,17 @@
 
 count = 0
 
+
 def show_count():
-  """ Function documentation string """
-  print(count)
+    """ Function documentation string """
+    print(count)
+
 
 def set_count(c):
-  #count = c # This doesnot modifies the global count
-  global count # This does
-  count = c
+    # count = c # This doesnot modifies the global count
+    global count  # This does
+    count = c
+
 
 show_count()
 set_count(5)
@@ -38,11 +41,11 @@ show_count()
 # All variables in Python are references to objects. even the basic types like Integers
 # Everthing in Python are an Object including functions and modules
 
-print(type(show_count)) # determines the type
-print(dir(set_count)) # shows the attributes of an object
- 
-print(set_count.__name__) # prints the function name 
-print(show_count.__doc__) # prints the function documentation string
+print(type(show_count))  # determines the type
+print(dir(set_count))  # shows the attributes of an object
+
+print(set_count.__name__)  # prints the function name
+print(show_count.__doc__)  # prints the function documentation string
 
 ##################################  NOTES  ##############################################
 
@@ -52,8 +55,8 @@ print(show_count.__doc__) # prints the function documentation string
 # The garbage collector removes objects with no references
 # is determines if tow names refer to the same object
 # Function arguments are passed by object references to mutable arguments can be modified
-# If a formal argument is rebound through assignment the original object reference is lost 
+# If a formal argument is rebound through assignment the original object reference is lost
 # return passes back an object reference to the caller
-# default argument only evaluated once when function is defined 
+# default argument only evaluated once when function is defined
 # Python names are looked up using LEGB rule
 # import and def results in binding to named references

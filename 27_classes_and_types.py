@@ -135,10 +135,12 @@ print(f2._number)  # not a good approaches
 
 # Inheritance in Python is primarily useful for sharing implementation between classes
 # Inheritance is used less in Python
+
+
 class Animal:
-  def identify(self):
-    pass
+    def identify(self):
+        pass
+
 
 class Dog(Animal):
-  pass
- 
+    pass

@@ -2,7 +2,8 @@
 # Act as a template for creating new objects and controls object's initial state, attributes and methods
 # Classes can make simple problems unnecessarily complex
 # Python Let's you strike the right balance between python and classes
-
+# All types in python has a class 
+# Object's class is set when it's initialized and fixed for the object's lifetime
 # Defining Classes
 
 from pprint import pprint as pp
